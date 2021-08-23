@@ -1,0 +1,54 @@
+.pg {
+  background: linear-gradient(180deg, #11ed9e 0%, #074730 100%);
+}
+
+.pg:hover {
+  transform: translateY(-2px);
+}
+.page-enter-active,
+.page-leave-active,
+.layout-enter-active,
+.layout-leave-active {
+  transition: opacity 0.3s;
+}
+.page-enter,
+.page-leave-to,
+.layout-enter,
+.layout-leave-active {
+  opacity: 0;
+}
+.activenav {
+  border-right: 5px solid #2da87c;
+  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+::selection {
+  color: white;
+  background-color: #2da87c;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.164);
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(221, 221, 221);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+.ficon {
+  border-radius: 50%;
+  border: 1px solid #2da87c;
+  cursor: pointer;
+}
